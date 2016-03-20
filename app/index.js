@@ -1,13 +1,12 @@
 var express = require('express');
 var app = express();
+var motivations=require('motivations');
 
 app.get('/', function(request,response){
-    response.send("Hiii bangalore");
+    response.send(motivations[6]);
 });
 module.exports=app;
 
 
-app.get('/random', function(request,response){
-    response.send("Hello");
-});
-module.exports=app;
+
+
